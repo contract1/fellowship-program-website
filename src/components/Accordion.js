@@ -8,13 +8,12 @@ import styled from "styled-components"
 import * as styles from "../utils/styles"
 
 const Content = styled(motion.div)`
-  padding: 20px;
+  padding: 18px;
   transform-origin: top center;
-  @media (max-width: 600px) {
-    padding-left: 20px;
+  @media (max-width: 550px) {
+    padding-left: 18px;
   }
 `
-
 const Header = styled(motion.header)`
   display: flex;
   border-radius: 4px;
@@ -28,16 +27,13 @@ const Icon = styled(FontAwesomeIcon)`
   margin-right: 16px;
   color: ${styles.colorGreen};
 `
-
 const Section = styled(motion.section)`
   overflow: hidden;
 `
-
 // TODO needed?
 const Container = styled.div`
   overflow: hidden;
 `
-
 const AccordionSection = ({
   i,
   expanded,
